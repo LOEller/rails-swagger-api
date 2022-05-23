@@ -30,6 +30,14 @@ RSpec.configure do |config|
               default: '127.0.0.1:3000'
             }
           }
+        },
+        {
+          url: 'https://{production}',
+          variables: {
+            defaultHost: {
+              default: 'rails-swagger-api.herokuapp.com'
+            }
+          }
         }
       ]
     }
